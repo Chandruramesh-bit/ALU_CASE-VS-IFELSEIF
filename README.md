@@ -98,6 +98,7 @@ Left side, you can see the HDL files. The right side of the window has Worklib a
 Worklib is the directory where all the compiled codes are stored, while Snapshot will have the output of elaboration, which in turn goes for simulation.
 
 To perform the function simulation, the following three steps are involved: Compilation, Elaboration and Simulation.
+![WhatsApp Image 2025-11-16 at 04 32 50_a22753b7](https://github.com/user-attachments/assets/3d687df3-e83a-417c-be73-29ae3f4280c6)
 
 #### Fig 3: Nclaunch Window
 
@@ -127,6 +128,7 @@ After compilation, it will come under worklib. You can see on the right side win
 select the test bench and compile it. It will come under Worklib. Under Worklib, you can see the module and test bench.
 
 The cds.lib file is an ASCII text file. It defines which libraries are accessible and where they are located. It contains statements that map logical library names to their physical directory paths. For this Design, you will define a library called “worklib”
+![WhatsApp Image 2025-11-16 at 04 32 56_93d5e15f](https://github.com/user-attachments/assets/5633ae1c-9b6d-4967-b02a-e5e060be53fd)
 
 #### Step 2: Elaboration:
 To check the port connections in a hierarchical design
@@ -152,6 +154,7 @@ Outputs: Elaborate database updated in the mapped library if successful, generat
 After elaboration, the file will come under snapshot. Select the test bench and simulate it.
 
 #### Fig 5: Elaboration Launch Option
+![WhatsApp Image 2025-11-16 at 04 32 53_7f77dd6a](https://github.com/user-attachments/assets/b60f8be2-5d1b-46eb-885f-9cd37793b209)
 
 #### Step 3: Simulation:
 – Simulate with the given test vectors over a period of time to observe the output behaviour.
@@ -165,14 +168,18 @@ Simulations allow dumping design and test bench signals into a waveform
 Steps for simulation – Run the simulation command with simulator options
 
 #### Fig 6: Design Browser window for simulation
+![WhatsApp Image 2025-11-16 at 04 32 56_1dff513f](https://github.com/user-attachments/assets/3175fbc8-9ebe-4e4a-8681-8edfe35046a2)
+
 
 #### Fig 7: Simulation Waveform Window
-
 Synthesis requires three files as follows,
 
 ◦ Liberty Files (.lib)
 
 ◦ Verilog/VHDL Files (.v or .vhdl or .vhd)
+![WhatsApp Image 2025-11-16 at 04 32 50_d1b9381d](https://github.com/user-attachments/assets/200a56c9-8d25-40cb-a282-170744df1cc1)
+
+![WhatsApp Image 2025-11-16 at 04 32 52_41a439f1](https://github.com/user-attachments/assets/41015b1e-9268-4f3c-8053-6b71078e4b8b)
 
 ##### Performing Synthesis
 
@@ -189,14 +196,22 @@ The Liberty files are present in the library path,
 • Genus Script file with .tcl file Extension commands are executed one by one to synthesize the netlist. Or use source run.tcl command in the terminal window to view the netlist, and a log file will be created in the working folder.
 
 #### Fig 8: Synthesis RTL Schematic using case and ifelseif construct
+![WhatsApp Image 2025-11-16 at 04 32 53_027ae71c](https://github.com/user-attachments/assets/380da30a-2b39-4c47-8b4d-593e1402a131)
+
+![WhatsApp Image 2025-11-16 at 04 32 49_343b9afa](https://github.com/user-attachments/assets/44dbc0c6-183a-4e74-8422-834665d0c2f2)
 
 #### Fig 9: Area report of case and ifelseif construct
+![WhatsApp Image 2025-11-16 at 04 32 58_4c98ab95](https://github.com/user-attachments/assets/0f905ab0-6a0c-4c33-a545-f59bc37595fb)
+
+![WhatsApp Image 2025-11-16 at 04 32 49_b8760fa0](https://github.com/user-attachments/assets/0c3ae53c-dc17-4660-8a64-b96d0af28e26)
 
 #### Fig 10: Power Report of case and ifelseif construct
+![WhatsApp Image 2025-11-16 at 04 32 52_314ce5f6](https://github.com/user-attachments/assets/bc78c16f-d3d5-4701-acb8-493237fa7004)
 
-#### Fig 11: Timing Report of case and ifelseif construct
+![WhatsApp Image 2025-11-16 at 04 32 49_c73cdb5a](https://github.com/user-attachments/assets/54cf2c7a-8d9b-42a8-b627-ce509b5d6aae)
 
-#### Fig 12: Tabulate Area,Power and Timing Report Comparision of ALU using case and ifelseif construct
+#### Fig 11: Tabulate Area,Power and Timing Report Comparision of ALU using case and ifelseif construct
+![WhatsApp Image 2025-10-31 at 17 50 02_0e4f754a](https://github.com/user-attachments/assets/036d98b9-d233-47f3-baef-df4130288398)
 
 ## Result
 The 32-bit ALU implemented using behavioural case statements and if–elseif constructs was successfully verified under Incisive (ncvlog/ncsim) for all tested vectors. Both implementations were functionally correct and synthesizable. Synthesis using Cadence Genus generated gate-level netlists along with area, timing, and power reports.
